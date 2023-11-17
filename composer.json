@@ -1,0 +1,38 @@
+{
+    "name": "swag/custom-cms-block",
+    "description": "Example plugin which adds a custom block for the CMS",
+    "version": "v1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shopware AG"
+        }
+    ],
+    "require": {
+        "shopware/core": "*",
+        "shopware/administration": "*",
+        "shopware/storefront": "*"
+    },
+    "extra": {
+        "shopware-plugin-class": "Swag\\CustomCmsBlock\\CustomCmsBlock",
+        "label": {
+            "de-DE": "Label für das Plugin CustomCmsBlock",
+            "en-GB": "Label for the plugin CustomCmsBlock"
+        },
+        "description": {
+            "de-DE": "Beschreibung für das Plugin CustomCmsBlock",
+            "en-GB": "Description for the plugin CustomCmsBlock"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Swag\\CustomCmsBlock\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Swag\\CustomCmsBlock\\Tests\\": "tests/"
+        }
+    }
+}
